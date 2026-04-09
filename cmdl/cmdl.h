@@ -1,5 +1,5 @@
-#ifndef NEW_CMD_LINE_H
-#define NEW_CMD_LINE_H
+#ifndef CMDL_H
+#define CMDL_H
 
 #include <stdint.h>
 
