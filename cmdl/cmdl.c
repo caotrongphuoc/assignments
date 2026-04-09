@@ -1,8 +1,7 @@
 #include <string.h>
-#include "new_cmd_line.h"
+#include "cmdl.h"
 
-uint8_t my_cmd_parse(my_cmd_t* table, uint8_t* input) 
-{
+uint8_t my_cmd_parse(my_cmd_t* table, uint8_t* input) {
 	uint8_t cmd[CMD_MAX_SIZE];
 	uint8_t len = 0;
 	uint8_t i = 0;
@@ -10,8 +9,7 @@ uint8_t my_cmd_parse(my_cmd_t* table, uint8_t* input)
 	if (table == NULL) return CMD_TABLE_NULL;
 
 	//tach ten command tu input
-	while (input[len] != '\0' && input[len] != ' ' && input[len] != '\r' && input[len] != '\n') 
-    {
+	while (input[len] != '\0' && input[len] != ' ' && input[len] != '\r' && input[len] != '\n') {
 		len++;
 	}
 
