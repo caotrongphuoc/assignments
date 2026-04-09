@@ -6,7 +6,7 @@ CFLAGS = -Wall -Wextra -g
 all: unit_test
 
 # Build unit_test
-unit_test: unit_test.c
+unit_test: unit_test.c cmdl.c cmdl.h
 	$(CC) $(CFLAGS) -o unit_test unit_test.c
 
 # Compile cmdl.c to object (smoke-check it builds cleanly)

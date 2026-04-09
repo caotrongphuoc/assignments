@@ -1,0 +1,9 @@
+# How to build and run on Linux
+
+#clear terminal
+
+
+#Build unit_test => make unit_test
+
+#run => ./unit_test
+

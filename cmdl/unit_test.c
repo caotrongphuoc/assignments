@@ -6,8 +6,8 @@
 
 //test setup
 static int called = -1;
-void handler_help(uint8_t* args) { called = 0; }
-void handler_led(uint8_t* args)  { called = 1; }
+void handler_help(uint8_t* args) { (void)args; called = 0; }
+void handler_led(uint8_t* args)  { (void)args; called = 1; }
 
 cmdl_t table[] = {
 	{"help", handler_help},
