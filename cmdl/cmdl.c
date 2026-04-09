@@ -1,7 +1,7 @@
 #include <string.h>
 #include "cmdl.h"
 
-uint8_t cmdl_parse(my_cmdl_t* table, uint8_t* input) {
+uint8_t cmdl_parse(cmdl_t* table, uint8_t* input) {
 	uint8_t cmd[CMDL_MAX_SIZE];
 	uint8_t len = 0;
 	uint8_t i = 0;
