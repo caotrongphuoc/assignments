@@ -18,4 +18,4 @@ typedef struct {
 
 uint8_t cmdl_parse(cmdl_t* table, uint8_t* input);
 
-#endif
+#endif //__CMDL_H__
